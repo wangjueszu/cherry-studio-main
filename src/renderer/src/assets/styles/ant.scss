@@ -1,0 +1,49 @@
+#inputbar {
+  resize: none;
+}
+
+.ant-image-preview-switch-left {
+  -webkit-app-region: no-drag;
+}
+
+.ant-btn:not(:disabled):focus-visible {
+  outline: none;
+}
+
+.ant-segmented-group {
+  gap: 4px;
+}
+
+.minapp-drawer {
+  max-width: calc(100vw - var(--sidebar-width));
+  .ant-drawer-content-wrapper {
+    box-shadow: none;
+  }
+  .ant-drawer-header {
+    position: absolute;
+    -webkit-app-region: drag;
+    min-height: calc(var(--navbar-height) + 0.5px);
+    width: calc(100vw - var(--sidebar-width));
+    margin-top: -0.5px;
+    border-bottom: none;
+  }
+  .ant-drawer-body {
+    padding: 0;
+    margin-top: var(--navbar-height);
+    overflow: hidden;
+    @extend #content-container;
+  }
+  .minapp-mask {
+    background-color: transparent !important;
+  }
+}
+
+.ant-drawer-header {
+  -webkit-app-region: no-drag;
+}
+
+.message-attachments {
+  .ant-upload-list-item:hover {
+    background-color: initial !important;
+  }
+}
